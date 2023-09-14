@@ -3,7 +3,7 @@ package com.sarunas;
 public class ReverseDate {
 
     public void printBonusDatesBetween(int fromYear, int toYear) {
-        if (!isValidYear(fromYear) || !isValidYear(toYear)) {
+        if (!isValidYear(fromYear) || !isValidYear(toYear) || fromYear > toYear) {
             System.out.println("Is not valid year...");
         }
         for (int year = fromYear; year < toYear; year++) {
